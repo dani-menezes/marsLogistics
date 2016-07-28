@@ -2,7 +2,9 @@ package com.github.cloud.common.bean;
 
 import java.util.List;
 
-public class Destiny {
+import com.coffey.architecture.common.CommonBean;
+
+public class Destiny implements CommonBean{
 	
 	private Integer id;
 	private String name;

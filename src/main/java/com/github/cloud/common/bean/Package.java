@@ -1,8 +1,10 @@
 package com.github.cloud.common.bean;
 
+import com.coffey.architecture.common.CommonBean;
+
 
 //@Entity("package")
-public class Package {
+public class Package implements CommonBean {
 	
 	private Integer id;
 	private Double weight;

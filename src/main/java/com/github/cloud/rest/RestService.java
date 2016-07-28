@@ -1,10 +1,13 @@
 package com.github.cloud.rest;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Application;
 import javax.ws.rs.core.Response;
+
+import com.github.cloud.common.bean.PushPackageDTO;
 
 /**
  * [FACADE] Expõe a interface externa para acesso aos serviços REST
@@ -35,7 +38,9 @@ public class RestService extends Application {
 	
 	@POST
 	@Path("addPackage")
-	public Response addPackage() {
+	@Consumes("application/json")
+	//@Produces("application/json")
+	public Response addPackage(PushPackageDTO dto) {
 		try {
 			
 			Response.ok().entity("").build();

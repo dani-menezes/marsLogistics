@@ -7,7 +7,7 @@ import javax.persistence.PersistenceContextType;
 import com.coffey.architecture.common.AbstractCommonDAO;
 import com.coffey.architecture.common.CommonBean;
 
-public abstract class AbstractCommonProjectDAO extends AbstractCommonDAO<CommonBean> {
+public abstract class AbstractCommonProjectDAO<E extends CommonBean> extends AbstractCommonDAO<E> {
 
 	/**Genereted serial uid version. */
 	private static final long serialVersionUID = -1876303764348922581L;

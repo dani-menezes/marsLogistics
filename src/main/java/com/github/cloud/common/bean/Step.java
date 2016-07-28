@@ -1,6 +1,8 @@
 package com.github.cloud.common.bean;
 
-public class Step {
+import com.coffey.architecture.common.CommonBean;
+
+public class Step implements CommonBean {
 
 	private Integer id;
 	private Package package_;
