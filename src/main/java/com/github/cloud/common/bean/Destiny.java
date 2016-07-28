@@ -47,4 +47,14 @@ public class Destiny implements CommonBean{
 		this.packages = packages;
 	}
 	
+	public void addPackages (List<Package> packages) {
+		if (this.packages != null) {
+			this.packages.addAll(packages);
+		} else {
+			this.packages = packages;
+		}
+	}
+
+
+
 }
